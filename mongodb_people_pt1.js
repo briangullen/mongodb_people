@@ -40,3 +40,8 @@ db.people.find({email: /.edu$/})
 // Question 14
 db.people.find({"children.age": {$lt: 4}})
 
+// Question 15
+db.people.find({children: []})
+
+// Question 16
+db.people.find({children: {$gte: {$size: 1}}})
