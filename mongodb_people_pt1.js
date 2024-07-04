@@ -35,7 +35,7 @@ db.people.find({age: {$lt: 30}}, {first_name: true, last_name: true})
 db.people.find({state: 'Montana'}, {age: false})
 
 // Question 13
-db.people.find({email: /.edu$/})
+db.people.find({email: /\.edu$/})
 
 // Question 14
 db.people.find({"children.age": {$lt: 4}})
