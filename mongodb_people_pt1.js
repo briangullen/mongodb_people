@@ -29,7 +29,7 @@ db.people.find({state: 'Michigan'}).sort({first_name: 1})
 db.people.find({$or: [{state: 'Virginia'}, {first_name: 'Virginia'}]})
 
 // Question 11
-db.people.find({age: {$lt: 30}}, {first_name: true, last_name: true})
+db.people.find({age: {$lt: 30}}, {first_name: true, last_name: true, _id: false})
 
 // Question 12
 db.people.find({state: 'Montana'}, {age: false})
